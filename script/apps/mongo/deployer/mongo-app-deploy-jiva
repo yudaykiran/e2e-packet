@@ -67,6 +67,7 @@ task_delimiter;
 #################
 ## RUNNER MAIN ##
 #################
+sed -i -e 's/value: openebs-mongodb/value: openebs-standalone/g'  apps/mongodb/deployers/run_litmus_test.yml
 
 echo "Running the litmus test.."
 
